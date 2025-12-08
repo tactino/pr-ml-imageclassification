@@ -1,6 +1,12 @@
+
 # PRML Project: Image Classification
 
-This project contains the implementation for the Pattern Recognition and Machine Learning course assignment.
+This repository contains the coursework for "Pattern Recognition and Machine Learning," focusing on bird image classification using the CUB-200 dataset. The project consists of two main tasks:
+
+- **Task 1: Traditional Method** — Implements a hand-written multiclass SVM (One-vs-Rest) using pre-extracted features to classify 10 bird species.
+- **Task 2: Deep Learning Method** — Trains a ResNet-18 network from scratch with data augmentation for end-to-end classification of 200 bird species.
+
+The project provides complete data processing, model training, evaluation, and a LaTeX report for easy reproduction and performance comparison between the two approaches.
 
 ## Project Structure
 
@@ -28,7 +34,18 @@ This project contains the implementation for the Pattern Recognition and Machine
     ```
 
 2.  **Prepare Data:**
-    Download the dataset and extract it into the `data/` directory. The structure should look like:
+
+    Download the dataset from Tsinghua Cloud:
+
+    - [data.zip (Tsinghua Cloud)](https://cloud.tsinghua.edu.cn/f/72aab178f61948c095dd/)
+
+    After downloading, extract `data.zip` into the project root directory:
+
+    ```bash
+    unzip data.zip -d ./
+    ```
+
+    The final structure should look like:
     ```
     data/
     ├── train/
